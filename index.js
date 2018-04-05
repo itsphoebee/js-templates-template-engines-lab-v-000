@@ -1,6 +1,7 @@
 function createPost() {
-  var postTitle = document.getElementById("header").value;
-  var postAuthor = document.getElementById("footer").value;
+  var postTitle = document.getElementById("postTitle").value;
+  var postAuthor = document.getElementById("postAuthor").value;
+  var postContent = document.getElementById("postContent").value;
 
   var postTemplate = document.getElementById("post-template").innerHTML;
   var templateFn = _.template(postTemplate);
