@@ -17,7 +17,6 @@ function createPost() {
   postDiv.getElementsByTagName("footer")[0] += commentsSection;
   }
 
-
   function postComment() {
     let commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
 
