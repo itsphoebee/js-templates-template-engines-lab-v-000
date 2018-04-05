@@ -5,6 +5,6 @@ function createPost() {
   var templateFn = _.template(postTemplate);
   var postsDiv = document.getElementById("posts");
   var templateHTML = templateFn({ 'post': post, 'poster': poster });
- 
+
   postsDiv.innerHTML += templateHTML;
 }
