@@ -8,7 +8,7 @@ function createPost() {
   let postContent = document.getElementById("postContent").value;
 
   let postDiv = document.getElementById("post");
-  let templateHTML = templateFn({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
+  let templateHTML = postTemplate({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
 
   postDiv.innerHTML += templateHTML;
 }
