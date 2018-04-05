@@ -8,14 +8,13 @@ function createPost() {
   let postAuthor = document.getElementById("postAuthor").value;
   let post = document.getElementById("postContent").value;
 
-
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 
-  let blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor })
+  let post = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor })
   let commentsSection = commentsTemplate();
   let postElement = document.getElementById('post');
 
-  postElement.innerHTML = blogSection;
+  postElement.innerHTML = post;
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
 }
 
