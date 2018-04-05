@@ -12,9 +12,9 @@ function createPost() {
   let templateHTML = postTemplate({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
   let commentsSection = commentsTemplate();
   let postDiv = document.getElementById('post')
-  
+
   postDiv.innerHTML += templateHTML;
-  postDiv.getElementsByTagName("footer")[0] += commentsTemplate;
+  postDiv.getElementsByTagName("footer")[0] += commentsSection;
   }
 
 
