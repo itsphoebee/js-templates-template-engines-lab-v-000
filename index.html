@@ -34,7 +34,7 @@
       <div id="comments">
       </div>
     </script>
-    
+
     <form id="newComment" onSubmit="postComment()">
       Add comment: <input type="text" id="commentText"><br>
       Your name: <input type="text" id="commenterName"><br>
@@ -45,13 +45,12 @@
       <div class="comment">
         <div class="commentText"><%= comment %></div>
         <div class="commenterName">
-          <p>
+          <footer>
           <span class="posted-by">Posted By: </span>
           <%= commenter %>
-          </p>
+          </footer>
         </div>
       </div>
-      <footer></footer>
     </script>
 
 
