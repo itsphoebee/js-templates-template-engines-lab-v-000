@@ -20,7 +20,7 @@ function postComment() {
   let comment = document.getElementById("commentText").value;
 
 
-  let templateHTML = commentTemplate({ 'commenter': commenterName, 'comment': commentText});
+  let templateHTML = commentTemplate({ 'commenter': commenter, 'comment': comment});
   let commentsTemplate = document.getElementById("comments");
 
   commentsTemplate.innerHTML += templateHTML
