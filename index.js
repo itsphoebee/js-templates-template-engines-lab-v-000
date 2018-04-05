@@ -5,7 +5,7 @@ function createPost() {
 
   let postTitle = document.getElementById("postTitle").value;
   let postAuthor = document.getElementById("postAuthor").value;
-  let postContent = document.getElementById("postContent").value;
+  let postContent = document.getElementById("postBody").value;
 
   document.getElementsByTagName('main')[0].innerHTML += pageTemplate();
 
