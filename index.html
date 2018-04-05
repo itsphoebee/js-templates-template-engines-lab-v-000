@@ -5,7 +5,6 @@
   </head>
   <body>
     <main>
-
             <form id="post-form" onSubmit="createPost()">
               Title: <input type="text" id="postTitle"><br>
               Author: <input type="text" id="postAuthor"><br>
@@ -15,6 +14,7 @@
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
+
       <script type="text/x-lodash-template" id="page-template">
         <div id="sidebar"></div>
         <div id="post"></div>
@@ -22,8 +22,8 @@
 
       <script type="text/x-lodash-template" id="post-template">
         <article>
-          <header> Post Title </header>
-          <p></p>
+          <header> <%- title %> </header>
+          <p> <%- post %> </p>
           <footer> Post Author </footer>
         </article>
       </script>
