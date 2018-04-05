@@ -10,8 +10,12 @@ function createPost() {
   let postDiv = document.getElementById("post");
   let templateHTML = postTemplate({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
 
-  postDiv += templateHTML;
-}
+  document.getElementsByTagName('main')[0].innerHTML += pageTemplate()
+    let post = document.getElementById('post')
+    postDiv.innerHTML += templateHTML;
+    post.getElementsByTagName("footer")[0].innerHTML += commentsTemplate;
+  }
+  
 
 function postComment() {
   let commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
