@@ -7,14 +7,14 @@ function createPost() {
   let postAuthor = document.getElementById("postAuthor").value;
   let postContent = document.getElementById("postContent").value;
 
-  document.getElementsByTagName('main')[0].innerHTML += pageTemplate()
+  document.getElementsByTagName('main')[0].innerHTML += pageTemplate();
 
   let templateHTML = postTemplate({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
   let commentsSection = commentsTemplate();
   let postDiv = document.getElementById('post')
 
   postDiv.innerHTML += templateHTML;
-  postDiv.getElementsByTagName("footer")[0] += commentsSection;
+  postDiv.getElementsByTagName("footer")[0] = commentsSection;
   }
 
 
