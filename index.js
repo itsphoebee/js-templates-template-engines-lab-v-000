@@ -1,9 +1,11 @@
 function createPost() {
-  let pageTemplate = _.template(document.getElementById("page-template").innerHTML);
+  let pageTemplate = _.template(document.getElementById("page-template").innerHTML);  
+  let commentsTemplate = document.getElementById("comments-template").innerHTML
+  let postTemplate = document.getElementById("post-template").innerHTML
 
-  var postTitle = document.getElementById("postTitle").value;
-  var postAuthor = document.getElementById("postAuthor").value;
-  var postContent = document.getElementById("postContent").value;
+  let postTitle = document.getElementById("postTitle").value;
+  let postAuthor = document.getElementById("postAuthor").value;
+  let postContent = document.getElementById("postContent").value;
 
   var postTemplate = document.getElementById("post-template").innerHTML;
   var templateFn = _.template(postTemplate);
