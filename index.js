@@ -10,8 +10,7 @@ function createPost() {
   let postDiv = document.getElementById("post");
   let templateHTML = postTemplate({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
 
-  let post = document.getElementById('post')
-  post.innerHTML = templateHTML
+  postDiv += templateHTML;
 }
 
 function postComment() {
@@ -23,5 +22,5 @@ function postComment() {
   let templateHTML = commentTemplate({ 'commenter': commenter, 'comment': comment});
   let commentsTemplate = document.getElementById("comments");
 
-  commentsTemplate.innerHTML += templateHTML;
+  commentsTemplate += templateHTML;
 }
