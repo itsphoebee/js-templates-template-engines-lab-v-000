@@ -14,6 +14,7 @@ function createPost() {
   var templateHTML = templateFn({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
 
   postDiv.innerHTML += templateHTML;
+  debugger;
 }
 
 function postComment() {
