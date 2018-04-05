@@ -23,6 +23,7 @@
     <script type="text/x-lodash-template" id="post-template">
       <article>
         <header> Post Title </header>
+        <p></p>
         <footer> Post Author </footer>
       </article>
     </script>
@@ -39,11 +40,11 @@
 
     <script type="text/x-lodash-template" id="comment-template">
       <div class="comment">
-        <div class="commentText"><%= comment %></div>
+        <div class="commentText"><%- comment %></div>
         <footer>
           <div class="commenterName">
             <span class="posted-by">Posted By: </span>
-            <%= commenter %>
+            <%- commenter %>
           </div>
         </footer>
       </div>
