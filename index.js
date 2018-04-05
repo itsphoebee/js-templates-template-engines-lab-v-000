@@ -15,7 +15,7 @@ function createPost() {
     postDiv.innerHTML += templateHTML;
     post.getElementsByTagName("footer")[0].innerHTML += commentsTemplate;
   }
-  
+
 
 function postComment() {
   let commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
