@@ -18,10 +18,17 @@
 
     <script type="text/x-lodash-template" id="post-template">
       <article>
-        <header> </header>
-        <footer> </footer>
+        <header> Post Title </header>
+        <footer> Post Author </footer>
       </article>
     </script>
+
+    <form id="post-form" onSubmit="createPost()">
+      Title: <input type="text" id="postTitle"><br>
+      Author: <input type="text" id="postAuthor"><br>
+      Content: <input type="text" id="postContent"><br>
+      <input type="submit">
+    </form>
 
     <script type="text/x-lodash-template" id="comments-template">
       <form id="newComment" onSubmit="postComment()">
