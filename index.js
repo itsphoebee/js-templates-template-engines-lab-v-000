@@ -9,7 +9,7 @@ function createPost() {
   var postDiv = document.getElementById("post");
   var templateHTML = templateFn({ 'post': postContent, 'poster': postAuthor, 'title': postTitle});
 
-  postsDiv.innerHTML += templateHTML;
+  postDiv.innerHTML += templateHTML;
 }
 
 function postComment() {
