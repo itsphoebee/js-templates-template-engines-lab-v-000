@@ -12,7 +12,7 @@ function createPost() {
 
   document.getElementsByTagName('main')[0].innerHTML += pageTemplate()
     let post = document.getElementById('post')
-    postDiv.innerHTML += templateHTML;
+    postDiv += templateHTML;
     post.getElementsByTagName("footer")[0].innerHTML += commentsTemplate;
   }
 
