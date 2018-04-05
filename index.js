@@ -1,23 +1,23 @@
 function createPost() {
-
-  let postTemplate = _.template(document.getElementById("post-template").innerHTML);
+  
   let pageTemplate = _.template(document.getElementById("page-template").innerHTML);
   let commentsTemplate = _.template(document.getElementById("comments-template").innerHTML);
+  let postTemplate = _.template(document.getElementById("post-template").innerHTML);
 
   let postTitle = document.getElementById("postTitle").value;
   let postAuthor = document.getElementById("postAuthor").value;
-  let post = document.getElementById("postBody").value;
+  let postContent = document.getElementById("postBody").value;
 
 
-  document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
+  document.getElementsByTagName('main')[0].innerHTML += pageTemplate();
 
-  let blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor })
+  let templateHTML = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor });
   let commentsSection = commentsTemplate();
-  let postElement = document.getElementById('post');
+  let postDiv = document.getElementById('post')
 
-  postElement.innerHTML = blogSection;
-  postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
-}
+  postDiv.innerHTML += templateHTML;
+  postDiv.getElementsByTagName("footer")[0].innerHTML += commentsSection;
+  }
 
   function postComment() {
     let commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
