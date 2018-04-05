@@ -16,6 +16,16 @@
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
 
+    <script type="text/x-lodash-template" id="comments-template">
+      <div id="comments">
+        <form onsubmit="postComment();return false">
+          <input type="text" id="comment"><br>
+          <input type="text" id="commenter"><br>
+          <input type="submit">
+        </form>
+      </div>
+    </script>
+
     <script type="text/x-lodash-template" id="page-template">
       <div id="sidebar"></div>
       <div id="post"></div>
