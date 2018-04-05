@@ -31,6 +31,11 @@
     </form>
 
     <script type="text/x-lodash-template" id="comments-template">
+      <form id="newComment" onSubmit="postComment()">
+        Add comment: <input type="text" id="commentText"><br>
+        Your name: <input type="text" id="commenterName"><br>
+        <input type="submit">
+      </form>
       <div id="comments">
       </div>
     </script>
